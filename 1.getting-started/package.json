@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "rollup",
+    "watch": "rollup --watch --config rollup.config.js"
+  },
+  "devDependencies": {
+    "rollup": "^1.31.1"
+  }
+}
