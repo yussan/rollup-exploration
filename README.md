@@ -1,5 +1,5 @@
-# roolup-exploration
+# react app bundle with rollup
 
-![https://rollupjs.org](https://rollupjs.org/images/twitter-card.jpg)
+This section we will try react bundle with rollup and check the result.
 
 Reference : https://rollupjs.org/guide/en/
