@@ -1,5 +1,3 @@
-// minify on production
-import uglify from "rollup-plugin-uglify-es";
 // to use babel
 import babel from "rollup-plugin-babel";
 // resolve from node_modules
@@ -8,6 +6,8 @@ import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 // replace process.env
 import replace from "@rollup/plugin-replace";
+// terser to minify
+import { terser } from "rollup-plugin-terser";
 
 // ref: https://rollupjs.org/guide/en/#command-line-reference
 let config = {
@@ -40,8 +40,6 @@ let config = {
 if (process.env.NODE_ENV == "production") {
   // minify on production build
   config.plugins.push(terser());
-  // iffe is : Immediately invoked function expression
-  // config.output.format = "iffe";
 }
 
 module.exports = config;
