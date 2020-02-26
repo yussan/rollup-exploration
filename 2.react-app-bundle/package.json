@@ -5,7 +5,8 @@
     "build": "NODE_ENV=production rollup --config rollup.config.js"
   },
   "devDependencies": {
-    "rollup": "^1.31.1"
+    "rollup": "^1.31.1",
+    "rollup-plugin-terser": "^5.2.0"
   },
   "dependencies": {
     "react": "^16.12.0",

@@ -1,4 +1,6 @@
-import uglify from "rollup-plugin-uglify-es";
+// Rollup plugin to minify generated es bundle
+// ref: https://www.npmjs.com/package/rollup-plugin-terser
+import { terser } from "rollup-plugin-terser";
 
 // ref: https://rollupjs.org/guide/en/#command-line-reference
 let config = {
@@ -18,7 +20,8 @@ let config = {
 // production
 if (process.env.NODE_ENV == "production") {
   // minify on production build
-  config.plugins.push(uglify());
+  // config.plugins.push(uglify());
+  config.plugins.push(terser());
 }
 
 module.exports = config;

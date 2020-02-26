@@ -6,7 +6,6 @@
   },
   "devDependencies": {
     "rollup": "^1.31.1",
-    "rollup-plugin-uglify-es": "^0.0.1",
     "uglify": "^0.1.5"
   }
 }
